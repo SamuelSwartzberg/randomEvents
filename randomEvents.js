@@ -29,7 +29,7 @@ openRandomEvent = function(eventURLtoOpen) {
 }
 
 getRandomEvent = function(){
-  var amountOfScrolls = 10;
+  var amountOfScrolls = 100;
   var delay = 1000;
   scrollToSufficientDepth(amountOfScrolls, delay);
   window.setTimeout(function() {
