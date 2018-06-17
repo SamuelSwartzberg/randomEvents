@@ -9,7 +9,7 @@ This code only works on this page: https://www.facebook.com/events/discovery/ (D
 # How to use it
 
 Navigate to your version of Facebooks Discover Events (probably: https://www.facebook.com/events/discovery/), and set your date&time range as well as your location.
-Open your Javascript Console ([Here's how](https://webmasters.stackexchange.com/questions/8525/how-do-i-open-the-javascript-console-in-different-browsers)), and copy&paste the whole code in the .js file. Wait a bit (100 seconds, to be precise), then, after a lot of scrolling, it should have picked an event for you. Congrats and have fun!
+Open your Javascript Console ([Here's how](https://webmasters.stackexchange.com/questions/8525/how-do-i-open-the-javascript-console-in-different-browsers)), copy&paste the whole code in the .js file, and press enter. Wait a bit (100 seconds, to be precise), then, after a lot of scrolling, it should have picked an event for you. Congrats and have fun!
 
 # How to trust it
 
