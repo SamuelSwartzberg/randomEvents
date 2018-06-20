@@ -11,22 +11,22 @@ scrollToSufficientDepth = function(amountOfScrolls, delay){
       window.scrollTo(0,document.body.scrollHeight);
       counter++;
       if(counter>=amountOfScrolls){
-        indow.clearInterval(interval)
+        indow.clearInterval(interval);
       }
-      vconsole.log(counter);
-    },delay)
-}
+      console.log(counter);
+    },delay);
+};
 
 getRandomEventURL = function() {
   var eventURLs = jQuery("._7ty");
   var randomEventIndex = Math.floor(Math.random()*eventURLs.length);
   var eventURL=jQuery("._7ty")[randomEventIndex].href;
   return eventURL;
-}
+};
 
 openRandomEvent = function(eventURLtoOpen) {
   window.open(eventURLtoOpen,"_self");
-}
+};
 
 getRandomEvent = function(){
   var amountOfScrolls = 100;
@@ -35,7 +35,7 @@ getRandomEvent = function(){
   window.setTimeout(function() {
     var eventURL = getRandomEventURL();
     openRandomEvent(eventURL);
-  }, amountOfScrolls*delay)
-}
+  }, amountOfScrolls*delay);
+};
 
 getRandomEvent();
