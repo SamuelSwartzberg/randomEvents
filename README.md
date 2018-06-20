@@ -8,7 +8,14 @@ This code only works on this page: https://www.facebook.com/events/discovery/ (D
 
 # How to use it
 
-Navigate to your version of Facebooks Discover Events (probably: https://www.facebook.com/events/discovery/), and set your date&time range as well as your location.
+Navigate to your version of Facebooks Discover Events (probably: https://www.facebook.com/events/discovery/), and set your date&time range as well as your location. Then, you have two options:
+
+## Option 1 (recommended): The bookmarklet
+
+Add a bookmark, preferrably to your bookmark bar. Give it a name of your choice, and copy the line of code from bookmarklets.js *in its entirety*. Press ok, and whenever you want to use it, just be on the page mentioned above, and click it. Wait a bit (100 seconds, to be precise), then, after a lot of scrolling, it should have picked an event for you. Congrats and have fun!
+
+## Option 2: The console
+
 Open your Javascript Console ([Here's how](https://webmasters.stackexchange.com/questions/8525/how-do-i-open-the-javascript-console-in-different-browsers)), copy&paste the whole code in the .js file, and press enter. Wait a bit (100 seconds, to be precise), then, after a lot of scrolling, it should have picked an event for you. Congrats and have fun!
 
 # How to trust it
