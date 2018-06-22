@@ -12,7 +12,7 @@ Navigate to your version of Facebooks Discover Events (probably: https://www.fac
 
 ## Option 1 (recommended): The bookmarklet
 
-Add a bookmark, preferrably to your bookmark bar. Give it a name of your choice, and copy the line of code from bookmarklets.js *in its entirety*. Press ok, and whenever you want to use it, just be on the page mentioned above, and click the bookmark. Wait a bit (100 seconds, to be precise), then, after a lot of scrolling, it should have picked an event for you. Congrats and have fun!
+Add a bookmark, preferrably to your bookmark bar. Give it a name of your choice, and, as the address, copy the line of code from bookmarklets.js *in its entirety*. This is what it should look like: ![The bookmarklet](bookmarkletExample.jpg?raw=true) Press ok, and whenever you want to use it, just be on the page mentioned above, and click the bookmark. Wait a bit (100 seconds, to be precise), then, after a lot of scrolling, it should have picked an event for you. Congrats and have fun!
 
 ## Option 2: The console
 
