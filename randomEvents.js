@@ -11,7 +11,7 @@ var scrollToSufficientDepth = function(amountOfScrolls, delay){
       window.scrollTo(0,document.body.scrollHeight);
       counter++;
       if(counter>=amountOfScrolls){
-        indow.clearInterval(interval);
+        window.clearInterval(interval);
       }
       console.log(counter);
     },delay);
