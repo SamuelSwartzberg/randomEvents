@@ -1,20 +1,3 @@
-// ==UserScript==
-// @name         Random event generator
-// @namespace    https://github.com/SamuelSwartzberg/randomEvents
-// @version      0.1
-// @description  Get a random event. See detaild docs at https://github.com/SamuelSwartzberg/randomEvents
-// @author       Samuel Swartzberg
-// @match        https://www.facebook.com/events/discovery/*&random
-// @grant        none
-// @require http://code.jquery.com/jquery-latest.js
-// ==/UserScript==
-
-/*
-*
-* Core code follows!
-*
-*/
-
 var scrollToSufficientDepth = function(AMOUNT_OF_SCROLLS, DELAY){
   var counter=0;
   var interval = window.setInterval(
