@@ -100,4 +100,4 @@ var getRandomEventWhenYouHaveTime = function(){
 
 //getRandomEventLinks();
 getAndOpenRandomEvent();
-//pickWellTimedRandomEvent();
+//getRandomEventWhenYouHaveTime();
