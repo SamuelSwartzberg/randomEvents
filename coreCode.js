@@ -1,3 +1,5 @@
+
+
 var scrollToSufficientDepth = function(AMOUNT_OF_SCROLLS, DELAY){
   var counter=0;
   var interval = window.setInterval(
@@ -28,6 +30,23 @@ var getRandomEventURLS = function() {
   }
 };
 
+var pickWellTimedRandomEvent = function() {
+  var eventItems = jQuery("._5lqg");
+  var pickedEvent = false;
+  var randomEventDateTime = "";
+  var randomEventURL = "";
+  do {
+    var randomEventIndex = Math.floor(Math.random()*eventItems.length);
+    var randomEvent = eventItems[randomEventIndex];
+    randomEventURL=jQuery(randomEvent).find("._7ty")[0].href;
+    randomEventDateTime += jQuery(randomEvent).find("._5x8v")[0].innerText;
+    randomEventDateTime += jQuery(jQuery(randomEvent).find("._42ef span")[0])[0].innerText.split("·")[0];
+    pickedEvent = window.confirm("Do you have time at:" + randomEventDateTime);
+    randomEventDateTime = "";
+  } while (pickedEvent === false)
+  return randomEventURL;
+};
+
 var openRandomEvent = function(eventURLtoOpen) {
   window.open(eventURLtoOpen,"_self");
 };
@@ -52,7 +71,17 @@ var getRandomEventLinks = function(){
   }, AMOUNT_OF_SCROLLS*DELAY);
 }
 
+var getRandomEventWhenYouHaveTime = function(){
+  var AMOUNT_OF_SCROLLS = 100;
+  var DELAY = 1000;
+  scrollToSufficientDepth(AMOUNT_OF_SCROLLS, DELAY);
+  window.setTimeout(function() {
+    var eventURL = pickWellTimedRandomEvent();
+    openRandomEvent(eventURL);
+  }, AMOUNT_OF_SCROLLS*DELAY);
+}
 //Choose which function runs
 
 //getRandomEventLinks();
 getAndOpenRandomEvent();
+//getRandomEventWhenYouHaveTime();
