@@ -4,13 +4,15 @@ Get random events from a popular social media site, using only client-side Javas
 
 # How it works
 
-This code only works on this page: https://www.facebook.com/events/discovery/ (Disclaimer: It works on my version of this page, facebook is known to have different features for different people.) It scrolles down a bunch of times, then creates a list of all the events loaded, and chooses one at random.
+This code only works on this page: https://www.facebook.com/events/discovery/ (Disclaimer: It works on my version of this page, facebook is known to have different features for different people.) It scrolls down a bunch of times, then creates a list of all the events loaded, and chooses one at random.
 
 # How to use it
 
 ## Option 1 (recommended): The bookmarklet
 
 Add a bookmark, preferrably to your bookmark bar. Give it a name of your choice, and, as the address, copy the line of code from bookmarklets.js *in its entirety*. This is what it should look like: ![The bookmarklet](bookmarkletExample.png?raw=true) Press ok. Whenever you want to use it, visit Facebooks Discover Events Page (probably: https://www.facebook.com/events/discovery/), and set your date&time range as well as your location. Click the bookmark, wait a bit (100 seconds, to be precise), then, after a lot of scrolling, it should have picked an event for you. Congrats and have fun!
+
+Note: The bookmarklet does not have the advanced features.
 
 ## Option 2: The console
 
@@ -26,3 +28,7 @@ Wait a bit (100 seconds, to be precise), then, after a lot of scrolling, it shou
 
 When you open up the developers console, facebook will tell you that "This is a browser feature intended for developers. If someone told you to copy-paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account." or something similar.
 They aren't wrong, in that this is a potential attack vector. A script pasted in the console could do a lot of malicious stuff to one's account. I invite the code-savy who use this to check the javascript file before you use it.
+
+# Advanced: Modifying the behaviour
+
+You can, instead of just getting one event, either get a list of 5 links, or get prompted with the time first, either accepting it or getting a new event suggested instead. You can do this via choosing a different of the three functions at the end of the code. This might seem a bit arcane, but feel free to play around with them until I write a proper documentation.
