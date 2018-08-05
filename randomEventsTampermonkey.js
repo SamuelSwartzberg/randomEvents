@@ -1,12 +1,14 @@
 // ==UserScript==
 // @name         Random event generator
 // @namespace    https://github.com/SamuelSwartzberg/randomEvents
-// @version      0.1
+// @version      0.2
 // @description  Get a random event. See detaild docs at https://github.com/SamuelSwartzberg/randomEvents
 // @author       Samuel Swartzberg
 // @match        https://www.facebook.com/events/discovery/*&random
 // @grant        none
-// @require http://code.jquery.com/jquery-latest.js
+// @require      http://code.jquery.com/jquery-latest.js
+// @updateURL    https://raw.githubusercontent.com/SamuelSwartzberg/randomEvents/master/randomEventsTampermonkey.js
+// @downloadURL  https://raw.githubusercontent.com/SamuelSwartzberg/randomEvents/master/randomEventsTampermonkey.js
 // ==/UserScript==
 
 /*
@@ -88,7 +90,7 @@ var getRandomEventLinks = function(){
 }
 
 var getRandomEventWhenYouHaveTime = function(){
-  var AMOUNT_OF_SCROLLS = 100;
+  var AMOUNT_OF_SCROLLS = 500;
   var DELAY = 1000;
   scrollToSufficientDepth(AMOUNT_OF_SCROLLS, DELAY);
   window.setTimeout(function() {
@@ -99,5 +101,5 @@ var getRandomEventWhenYouHaveTime = function(){
 //Choose which function runs
 
 //getRandomEventLinks();
-getAndOpenRandomEvent();
-//getRandomEventWhenYouHaveTime();
+//getAndOpenRandomEvent();
+getRandomEventWhenYouHaveTime();
